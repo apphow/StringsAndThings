@@ -49,4 +49,5 @@ public class StringsAndThingsTest {
         int expected = StringsAndThings.countYZ(input);
         Assert.assertEquals(expected, actual);
     }
+
 }
