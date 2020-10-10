@@ -2,22 +2,19 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class RemoveStringTest {
 
-    private StringsAndThings stringsAndThings;
+    private  RemoveString removeString;
     @Before
     public void setUp() throws Exception {
-        stringsAndThings = new StringsAndThings();
+       removeString = new RemoveString();
     }
 
     @Test
     public void removeStringTest() {
         String base = "Friendly Friday Firedrill";
         String expected = "Friend Friday Firedrill";
-        String actual = stringsAndThings.removeString(base, "ly");
-        System.out.println(expected);
+        String actual = RemoveString.removeString(base, "ly");
         Assert.assertEquals(expected, actual);
     }
 
@@ -25,7 +22,7 @@ public class RemoveStringTest {
     public void removeStringTest1() {
         String base = "Yellow Paint";
         String expected = "Yow Paint";
-        String actual = stringsAndThings.removeString(base, "ell");
+        String actual = RemoveString.removeString(base, "ell");
         Assert.assertEquals(actual, expected);
     }
 
@@ -33,7 +30,7 @@ public class RemoveStringTest {
     public void removeStringTest2() {
         String base = "How are you?";
         String expected = "How are you?";
-        String actual = stringsAndThings.removeString(base, "z");
+        String actual = RemoveString.removeString(base, "z");
         Assert.assertEquals(expected, actual);
     }
 
