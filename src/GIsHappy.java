@@ -21,22 +21,4 @@ public class GIsHappy {
         }
         return isHappy;
     }
-
-
-/*
-        boolean isHappy = true;
-
-        for (int i = 0; i < input.length(); i++) {
-            if (input.charAt(i) == 'g') {
-                if (input.charAt(i -1) == 'g') {
-                    isHappy = true;
-                } else if(input.charAt(i + 1) == 'g')
-                    isHappy = true;
-                } else
-                    isHappy = false;
-            }
-        return isHappy;
-    }
-
- */
 }
